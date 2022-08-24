@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/newsmain.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main_container">
+        <div id="box1"></div>
+        <div id="box2">
+            
+            <div id="box3">
+                <div>MOST POPULAR<hr></div>
+                <hr>
+                
+                
+            </div>
+            <div id="box4">
+                <img src="https://s3.ap-southeast-1.amazonaws.com/cdn.deccanchronicle.com/images/archives.jpg" alt="">
+            </div>
+            
+            <div id="box5">
+                <div>MORE FROM CURRENT AFFAIRS<hr></div>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div id="main_container2"></div>
+</body>
+</html>
+
+<script type="module">
+    import {main,append,append2} from "./scripts/newsmain.js";
+    let res1=await main("https://newsapi.org/v2/everything?q=apple&from=2022-08-23&to=2022-08-23&sortBy=popularity&apiKey=3b0d1c2c88ac4818b1a323df1f5eb64b");
+    let container1=document.querySelector("#box3")
+    append(res1,container1)
+
+    let res2=await main("https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=3b0d1c2c88ac4818b1a323df1f5eb64b")
+    let container2=document.querySelector("#box5")
+    append(res2,container2)
+
+    let res3=await main("https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=3b0d1c2c88ac4818b1a323df1f5eb64b")
+    let container3=document.querySelector("#main_container2")
+    append2(res3,container3)
+
+
+    
+</script>
