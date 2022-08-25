@@ -10,49 +10,63 @@ let main=async (val)=>{
 let append=(data,container)=>{
     let count=0;
     console.log(data)
-    data.forEach(({urlToImage,title})=>{
+    data.forEach((ele)=>{
         if(count<=5){
             let div=document.createElement("div")
         div.setAttribute("class","box")
         let p=document.createElement("h4")
         let img=document.createElement("img")
         let hr=document.createElement("hr")
-        p.innerText=title
-        img.src=urlToImage;
+        p.innerText=ele.title
+        img.src=ele.urlToImage;
         div.append(p,img)
 
         container.append(div,hr)
-        
+        div.addEventListener("click",function(){
+            mainnews(ele)
+
+        })
 
         }else{
             return
         }
         count++;
     })
+
+    function mainnews(data){
+        localStorage.setItem("newsdata",JSON.stringify(data))
+        window.location.reload()
+    }
     
 }
 let append2=(data,container)=>{
-    let count=0;
-    console.log(data)
-    data.forEach(({urlToImage,title})=>{
-        if(count<=5){
+    let count=0
+    
+    data.forEach((ele)=>{
+        if(count<4){
             let div=document.createElement("div")
-        div.setAttribute("class","box")
+        div.setAttribute("class","box2")
         let p=document.createElement("h4")
         let img=document.createElement("img")
         let hr=document.createElement("hr")
-        p.innerText=title
-        img.src=urlToImage;
+        p.innerText=ele.title
+        img.src=ele.urlToImage;
         div.append(img,p)
 
-        container.append(div,hr)
-        
+        container.append(div)
+        div.addEventListener("click",function(){
+            mainnews(ele)
+
+        })
         }else{
             return
         }
         count++;
     })
-    
+    function mainnews(data){
+        localStorage.setItem("newsdata",JSON.stringify(data))
+        window.location.reload()
+    }
 }
 export {main,append,append2}
 /*
