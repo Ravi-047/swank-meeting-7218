@@ -1,0 +1,324 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+#top_bar {
+  background: black;
+  color: white;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 9%;
+  box-shadow: rgba(11, 11, 11, 0.591) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#top_left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 34%;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 2px;
+}
+
+#top_left > a:nth-child(2) {
+  margin-left: 15px;
+}
+
+#top_left > a:nth-child(3) {
+  color: white;
+  text-decoration: none;
+}
+.fa-bars {
+  font-size: 25px;
+  transition: 0.5s;
+}
+.fa-bars + a > p {
+  cursor: pointer;
+  color: white;
+}
+
+.fa-bars:hover {
+  cursor: pointer;
+  color: rgb(46, 46, 46);
+}
+
+#icon_fa > a > i,
+img {
+  font-size: 23px;
+  margin-inline: 0px;
+  cursor: pointer;
+  color: white;
+}
+#icon_fa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+  margin-left: 20px;
+}
+
+.r_app_logo {
+  width: 55%;
+}
+
+#top_right {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 2px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#top_right > a {
+  text-decoration: none;
+  color: white;
+  margin-left: 7px;
+}
+
+#autoRefresh {
+  width: 20px;
+  height: 17px;
+  cursor: pointer;
+}
+
+#Deccan_logo_main {
+  width: 100%;
+  padding: 15px 0px;
+}
+.deccan_chronicles_image {
+  width: 20%;
+  background: none;
+  margin: auto;
+}
+.deccan_chronicles_image > img {
+  width: 100%;
+}
+
+.date_time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 24.1%;
+  margin: auto;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #383838;
+}
+
+#navbar_all_options {
+  border-top: 4px solid black;
+  border-bottom: 2px solid #adadad;
+  width: 85%;
+  margin: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.nav_option {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #383838;
+  padding: 10px 15px;
+}
+
+.nav_option:hover {
+  border-top: 2px solid #dedada;
+  border-bottom: 2px solid red;
+  background-color: #dedada;
+}
+
+#more_function {
+  position: relative;
+}
+
+#More_Option {
+  position: absolute;
+  width: 190px;
+  top: 34.5px;
+  left: -45%;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.805) 0px 5px 15px;
+  border-radius: 5px;
+  background-color: white;
+  visibility: hidden;
+}
+
+#More_Option > a {
+  text-decoration: none;
+  color: #313030;
+  padding: 10px 5px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+#More_Option > a:hover {
+  background-color: #d3d1d162;
+}
+
+#more_function:hover #More_Option {
+  visibility: visible;
+}
+
+.bar_div {
+  width: 24.2%;
+  height: 100vh;
+  position: absolute;
+  top: 0%;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.996) 0px 5px 15px;
+}
+
+#logo__cut {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+#logo__cut > img {
+  width: 60%;
+  cursor: pointer;
+}
+
+#logo__cut > span {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.bar_div {
+  visibility: hidden;
+}
+
+.dark_black {
+  border: 2px solid black;
+  background: black;
+}
+
+#logo_prayers {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+#logo_prayers > a:first-child > i {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  margin-left: 4px;
+  padding: 6px 10px;
+}
+
+#logo_prayers > a:first-child > i:hover {
+  background: black;
+  color: white;
+}
+
+#logo_prayers > a:last-child {
+  font-size: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  padding: 6px 3px;
+}
+
+#logo_prayers > a:last-child:hover {
+  background: black;
+  color: white;
+}
+
+#logo_prayers > a:last-child > i {
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  padding: 3px 2px;
+}
+
+#logo_prayers > a:last-child:hover i {
+  background: black;
+  color: white;
+}
+
+#r_side_nav {
+  width: 100%;
+  height: 68vh;
+  margin-top: 20px;
+  overflow-y: scroll;
+}
+
+#social_bar {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+#social_bar > div > a {
+  color: black;
+  font-size: 3rem;
+  padding: 0px 20px;
+}
+
+#social_bar > div > a:hover {
+  background: linear-gradient(transparent, transparent, black, black, black);
+  color: white;
+}
+
+.r_nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.r_nav > li > a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 28px;
+  display: block;
+  padding: 5px 10px;
+}
+.r_nav > li > ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 15px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.r_nav > li > ul > li > a {
+  text-decoration: none;
+  padding: 3px 10px;
+  color: black;
+  font-size: 1.1rem;
+}
+
+.r_nav > li > ul > li > a:hover {
+  background: black;
+  color: white;
+}
+
+.r_nav > li > a:hover {
+  background: rgba(211, 210, 210, 0.774);
+}
