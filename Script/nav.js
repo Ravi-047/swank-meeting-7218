@@ -1,5 +1,12 @@
 console.log("working nav.js");
 
+import navbar from "../components/navbar.js";
+
+let nav_container = document.querySelector("header");
+nav_container.innerHTML = navbar();
+
+console.log(nav_container);
+
 const months = [
     "Jan",
     "Feb",
