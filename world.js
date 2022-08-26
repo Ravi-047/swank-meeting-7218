@@ -102,7 +102,7 @@ async function infodata(){
     
     function third(realdata){
         let imgs=document.createElement("img");
-        imgs.src=realdata[1].urlToImage;
+        imgs.src=realdata[16].urlToImage;
         imgs.style.width="700px";
         imgs.style.borderRadius="10px"
         imgs.style.marginTop="20px"
@@ -323,7 +323,9 @@ if(realda[j].urlToImage==null){
 }
 
 for(let k=7;k<10;k++){
-
+    if(realda[k].urlToImage==null){
+        continue;
+    }else{
     let box9= document.createElement("div");
     box9.style.margin="40px"
     box9.style.display="flex"
@@ -347,7 +349,7 @@ for(let k=7;k<10;k++){
 
     document.querySelector("#assecond").append(box9);
 }
-
+}
 }
 
 
@@ -472,7 +474,9 @@ async function middle(){
             }
             
             for(let k=7;k<10;k++){
-            
+                if(actualdata[k].urlToImage==null){
+                    continue;
+                }else{
                 let box9= document.createElement("div");
                 box9.style.margin="40px"
                 box9.style.display="flex"
@@ -496,7 +500,7 @@ async function middle(){
             
                 document.querySelector("#amsecond").append(box9);
             }
-            
+        }
             }
             
             
@@ -543,7 +547,7 @@ function europ(reald){
     for(let j=2;j<=6;j++){
         if(reald[j].urlToImage==null||j==3){
             continue;
-           }
+           }else{
        
         let box10= document.createElement("div");
         box10.style.marginLeft="30px"
@@ -570,7 +574,7 @@ function europ(reald){
         }
 
 
-
+    }
 }
 
     
@@ -644,7 +648,9 @@ function africa(actualdata){
         }
         
         for(let k=7;k<10;k++){
-        
+            if(actualdata[k].urlToImage==null){
+                continue;
+            }else{
             let box9= document.createElement("div");
             box9.style.margin="40px"
             box9.style.display="flex"
@@ -668,7 +674,7 @@ function africa(actualdata){
         
             document.querySelector("#afsecond").append(box9);
         }
-        
+    }
         }
         
         
@@ -699,7 +705,7 @@ function africa(actualdata){
 function ausnz(real){
 
     
-    for(let j=1;j<=7;j++){
+    for(let j=1;j<=4;j++){
         if(real[j].urlToImage==null||j==3){
             continue;
            }
