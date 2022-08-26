@@ -185,6 +185,7 @@ img {
   height: 100vh;
   position: absolute;
   top: 0%;
+  z-index: 5;
   background: white;
   box-shadow: rgba(0, 0, 0, 0.996) 0px 5px 15px;
 }
