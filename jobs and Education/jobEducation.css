@@ -1,0 +1,74 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+#home_job_Education {
+  width: 85%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#home_job_Education > a > i {
+  color: black;
+}
+
+#home_job_Education > span {
+  font-size: 18px;
+  color: #383838;
+  font-weight: 400;
+}
+
+#jobs_Education {
+  border: 2px solid red;
+  width: 85%;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+}
+
+#job_Education_section {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+#job_Education_section > h1 {
+  border-bottom: 3px solid red;
+  width: 45.6%;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  line-height: 50px;
+}
+.main_news_div {
+  border-bottom: 2px solid rgb(197, 195, 195);
+  display: flex;
+  padding: 10px 10px;
+  gap: 10px;
+}
+
+.main_news_image {
+  width: 35%;
+  height: 170px;
+}
+
+.main_news_image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main_news_content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#most_popular_section {
+  border: 2px solid black;
+  width: 30%;
+}
