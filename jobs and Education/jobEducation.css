@@ -22,11 +22,11 @@
 }
 
 #jobs_Education {
-  border: 2px solid red;
   width: 85%;
   margin: auto;
   margin-top: 10px;
   display: flex;
+  margin-bottom: 70px;
 }
 
 #job_Education_section {
@@ -37,8 +37,8 @@
 
 #job_Education_section > h1 {
   border-bottom: 3px solid red;
-  width: 45.6%;
-  font-size: 3rem;
+  width: 38%;
+  font-size: 2.5rem;
   margin-bottom: 10px;
   font-weight: 600;
   line-height: 50px;
@@ -71,4 +71,25 @@
 #most_popular_section {
   border: 2px solid black;
   width: 30%;
+}
+
+#page {
+  width: 70%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.pageNumber {
+  padding: 10px 20px;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: white;
+  cursor: pointer;
+  margin-inline: 5px;
+}
+
+.pageNumber:hover {
+  background-color: lightgray;
 }

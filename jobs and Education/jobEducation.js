@@ -1,7 +1,7 @@
 console.log("working jobEducation.js");
 
-let getData = async () => {
-    const url = "https://newsapi.org/v2/everything?q=Education AND Jobs&pageSize=20&apiKey=0400744487794b96b2a7c9d61d7d135c"
+let getData = async (page_number, per_page) => {
+    const url = `https://newsapi.org/v2/everything?q=Education AND Jobs&pageSize=${per_page}&page=${page_number}&apiKey=0400744487794b96b2a7c9d61d7d135c`
     try {
         let res = await fetch(url);
         let data = await res.json();
@@ -13,7 +13,6 @@ let getData = async () => {
     }
 }
 
-getData();
 
 
 let append = (data) => {
@@ -53,3 +52,39 @@ let append = (data) => {
 }
 
 
+
+
+const showButon = (results, per_page) => {
+    let button_div = document.getElementById("page");
+    let buttons = Math.ceil(results / per_page);
+    console.log(buttons);
+    for (let i = 1; i <= buttons; i++) {
+        let button = document.createElement('button');
+        button.innerText = i;
+        button.className = "pageNumber"
+        button.onclick = function () {
+            getData(i, per_page);
+        }
+        button_div.append(button);
+    }
+}
+
+//> On Load this function will excute;
+let showdata = async () => {
+    console.log("hello world");
+    const url = `https://newsapi.org/v2/everything?q=Education AND Jobs&apiKey=0400744487794b96b2a7c9d61d7d135c`
+    try {
+        let res = await fetch(url);
+        let get_data = await res.json();
+        console.log(get_data.articles);
+        let array = [];
+        let per_page = 20  //. showing data per page;
+        for (let i = 0; i < per_page; i++) {
+            array.push(get_data.articles[i]);
+        }
+        append(array);
+        showButon(get_data.articles.length, per_page);
+    } catch (err) {
+        console.log(err);
+    }
+}
