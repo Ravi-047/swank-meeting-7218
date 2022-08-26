@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/newsmain.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main_container">
+        <div id="box1"></div>
+        <div id="box2">
+            
+            <div id="box3">
+                <div>MOST POPULAR<hr></div>
+                <hr>
+                
+                
+            </div>
+            <div id="box4">
+                <img src="https://s3.ap-southeast-1.amazonaws.com/cdn.deccanchronicle.com/images/archives.jpg" alt="">
+            </div>
+            
+            <div id="box5">
+                <div>MORE FROM CURRENT AFFAIRS<hr></div>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div id="main_container3">
+        <img src="https://tpc.googlesyndication.com/simgad/14690387982617694008?sqp=4sqPyQQrQikqJwhfEAEdAAC0QiABKAEwCTgDQPCTCUgAUAFYAWBfcAJ4AcUBLbKdPg&rs=AOga4qnIxKF1ONBRK-7RP0AHHX-LITzQfw" alt="">
+    </div>
+    <div id="main_container2">
+        <div>LATEST FROM SPORTS<hr></div>
+        <div id="box6"></div>
+        <hr>
+    </div>
+    <div id="main_container4">
+        <img src="https://s0.2mdn.net/simgad/5233555843551686825" alt="">
+    </div>
+</body>
+</html>
+
+<script type="module">
+    import {main,append,append2} from "./scripts/newsmain.js";
+    let res1=await main("https://newsapi.org/v2/everything?q=apple&from=2022-08-23&to=2022-08-23&sortBy=popularity&apiKey=3b0d1c2c88ac4818b1a323df1f5eb64b");
+    let container1=document.querySelector("#box3")
+    append(res1,container1)
+
+    let res2=await main("https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=3b0d1c2c88ac4818b1a323df1f5eb64b")
+    let container2=document.querySelector("#box5")
+    append(res2,container2)
+
+    let res3=await main("https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=3b0d1c2c88ac4818b1a323df1f5eb64b")
+    let container3=document.querySelector("#box6")
+    append2(res3,container3)
+
+   
+   function data_append(){
+    let data=JSON.parse(localStorage.getItem("newsdata"))
+    console.log(data)
+        let p=document.createElement("h2")
+        let p2=document.createElement("p")
+        let img=document.createElement("img")
+        let hr=document.createElement("p")
+        let hr2=document.createElement("hr")
+        img.src=data.urlToImage
+        p.innerText=data.title
+        hr.innerText=data.content
+        p2.innerText=data.description
+
+        document.querySelector("#box1").append(p,img,hr2,hr,p2)
+   } 
+   data_append() 
+   
+</script>
