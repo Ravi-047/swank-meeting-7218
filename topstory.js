@@ -1,8 +1,10 @@
+let key="b12dcc7b5f604de9b71fb6cff5fd3996";
+
 async function getdata(){
 
     try {
         
-    let res= await fetch("https://newsapi.org/v2/top-headlines?country=in&apiKey=0c18b0d72b504269ada33e0c987a9eee")
+    let res= await fetch(`https://newsapi.org/v2/top-headlines?country=in&apiKey=${key}`)
     
     let data=  await res.json();
     let actualdata=data.articles;
@@ -108,7 +110,7 @@ async function getdata(){
     
         try {
             
-        let res= await fetch("https://newsapi.org/v2/top-headlines?country=in&apiKey=0c18b0d72b504269ada33e0c987a9eee&category=general")
+        let res= await fetch(`https://newsapi.org/v2/top-headlines?country=in&apiKey=${key}&category=general`)
         
         let data=  await res.json();
         let realdata=data.articles;
