@@ -88,7 +88,11 @@ body{
 }
 #box1>img{
     width: 100%;
+    margin-top: 20px;
     
+}
+#box1>h1{
+    color:#333333
 }
 #box1>p{
     padding: 10px;
@@ -114,4 +118,25 @@ body{
 }
 #main_container4{
     margin-left: 180px;
+}
+#main_container2>hr{
+    width: 60%;
+    margin-right: 40%;
+}
+#main_conatiner5{
+    margin-top: 10px;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+#main_conatiner5>.newsbox>div>img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+.newsbox{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px 10px 10px 10px;
+    
 }
