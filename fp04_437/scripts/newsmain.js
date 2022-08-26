@@ -63,10 +63,14 @@ let append2=(data,container)=>{
         }
         count++;
     })
+
+    //sai
+
     function mainnews(data){
         localStorage.setItem("newsdata",JSON.stringify(data))
         window.location.reload()
     }
+
 }
 export {main,append,append2}
 /*
