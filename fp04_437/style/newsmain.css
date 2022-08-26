@@ -11,7 +11,7 @@ body{
     width: 60%;
     
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    height: 800px;
+    
 }
 #main_container>#box2{
     width: 40%;
@@ -68,7 +68,75 @@ body{
     width: 40%;
 
 }
-#main_container2{
+#main_container2>#box6{
     width: 60%;
+    display: flex;
+    
+    
+}
+#main_container2>#box6>.box2{
+    margin-left: 20px;
+    
+}
+#main_container2>#box6>.box2>img{
+    width: 100%;
+    height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#box1{
+    padding: 10px;
+}
+#box1>img{
+    width: 100%;
+    margin-top: 20px;
+    
+}
+#box1>h1{
+    color:#333333
+}
+#box1>p{
+    padding: 10px;
+    font-size: 30px;
+    color: #78746c;
+}
+#main_container2>div>hr{
+    border-color: red;
+    background-color: red;
+    width: 220px;
+    margin-right: 86%;
+}
+#main_container2{
+    margin-top: 20px;
+}
+#main_container2>div{
+    font-size: 20px;
+    font-weight: bold;
+}
+#main_container3>img{
+    width: 60%;
+    margin-top: 20px;
+}
+#main_container4{
+    margin-left: 180px;
+}
+#main_container2>hr{
+    width: 60%;
+    margin-right: 40%;
+}
+#main_conatiner5{
+    margin-top: 10px;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+#main_conatiner5>.newsbox>div>img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+.newsbox{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px 10px 10px 10px;
     
 }
