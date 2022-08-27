@@ -1,242 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-        #container{
-            display: flex;
-            width: 100%;
-           
-            height: auto;
-            justify-content: space-around;
-        }
-        #first{
-            width: 38%;
-           
-        }
-        #second{
-           
-            width: 29%;
-           
-            margin-top: 52px;
-        }
-        #third{
-           
-            width: 30%;
-            
-            background-color: #f8f8f8;
-        }
-        
-        #first>div{
-            margin-top: 20px;
-            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-        }
-        #second>div{
-            display: flex;
-            justify-content: space-between;
-            margin-top: 30px;
-            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-        }
-        #third>div{
-            display: flex;
-            justify-content: space-between;
-            margin-top: 30px;
-            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-        }
-        .top{
-            border-bottom: 3px solid red;
-            font-size: 30px;
-           
-        
-        }
-        #most{
-            border-bottom: 3px solid red;
-margin-top: 330px;
-font-size: 30px;
+    <link rel="stylesheet" href="./style/nav.css" />
+    <link rel="stylesheet" href="./style/world.css" />
 
-        }
-        #gal{
-            width: 90%;
-            margin: 20px auto auto auto;
-            display: flex;
-            justify-content: space-between;
-            background-color: #e6e6e6;
-            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-        }
-    #galy{
-        width: 60%;
-    }
-    #more{
-        width: 35%;
-        
-    }
-   #more>div{
-    display: flex;
-    justify-content: space-between;
-            margin-top: 30px;
-   }
-   #more>div:hover{
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  cursor: pointer;
-
-}
-#negis{
-   
-    width: 90%;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    margin: 20px auto auto auto;
-}
-#middle{
-    width: 90%;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    margin: 20px auto auto auto; 
-}
-#euro{
-    width: 90%;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    margin: 20px auto auto auto;  
-}
-#ausnz{
-    width: 90%;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    margin: 20px auto auto auto;  
-}
-#mid{
-    width: 60%;
-    display: flex;
-}
-#europ{
-    width: 60%;
-    display: flex;
-}
-#aunz{
-    width: 60%;
-    display: flex;
-}
-#neg{
-    width: 60%;
-    display: flex;
-}
-#asfirst{
-    display: flex;
-}
-#asia{
-    width: 90%;
-    margin:20px auto auto auto;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-
-}
-#america{
-    width: 90%;
-    margin:20px auto auto auto;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-
-}
-#africa{
-    width: 90%;
-    margin:20px auto auto auto;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-
-}
-#affirst{
-    display: flex;
-}
-#afsecond{
-    display: flex;
-}
-
-#amfirst{
-    display: flex;
-}
-#amsecond{
-    display: flex;
-}
-#assecond{
-    display: flex;
- 
-}
-#subcon{
-    width: 85%;
-    margin: auto;
-}
-   
-    </style>
-</head>
-<body>
+    <link rel="stylesheet" href="./style/footer.css" />
+    <script
+      src="https://kit.fontawesome.com/58793f9d55.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header></header>
     <div id="subcon">
-        <div id="container">
-
-            <div id="first">
-                <a class="top">WORLD</a>
-            </div>
-    <div id="second"></div>
-    
-    <div id="third">
-        <a id="most">MOST POPULAR</a>
-    </div>
-    
-    
+      <div id="container">
+        <div id="first">
+          <a class="top">WORLD</a>
         </div>
+        <div id="second"></div>
+
+        <div id="third">
+          <a id="most">MOST POPULAR</a>
+        </div>
+      </div>
     </div>
-  
 
     <div id="gal">
-<div id="galy"><a class="top">GALLERY</a></div>
-<div id="more"><a class="top">MORE GALLERIES</a></div>
-
-
+      <div id="galy"><a class="top">GALLERY</a></div>
+      <div id="more"><a class="top">MORE GALLERIES</a></div>
     </div>
 
     <div id="negis">
-        <a class="top">NEGHIBOUR</a>
-       <div id="neg">
-
-       </div>
-       
+      <a class="top">NEGHIBOUR</a>
+      <div id="neg"></div>
     </div>
 
     <div id="asia">
-        <a class="top">ASIA</a>
-<div id="asfirst"></div>
-<div id="assecond"></div>
-
+      <a class="top">ASIA</a>
+      <div id="asfirst"></div>
+      <div id="assecond"></div>
     </div>
 
     <div id="middle">
-        <a class="top">MIDDLE EAST</a>
-<div id="mid"></div>
+      <a class="top">MIDDLE EAST</a>
+      <div id="mid"></div>
     </div>
 
     <div id="america">
-        <a class="top">AMERICA</a>
-<div id="amfirst"></div>
-<div id="amsecond"></div>
-
+      <a class="top">AMERICA</a>
+      <div id="amfirst"></div>
+      <div id="amsecond"></div>
     </div>
 
     <div id="euro">
-        <a class="top">EUROPE</a>
-<div id="europ"></div>
+      <a class="top">EUROPE</a>
+      <div id="europ"></div>
     </div>
-
 
     <div id="africa">
-        <a class="top">AFRICA</a>
-<div id="affirst"></div>
-<div id="afsecond"></div>
-
+      <a class="top">AFRICA</a>
+      <div id="affirst"></div>
+      <div id="afsecond"></div>
     </div>
 
-
-    
     <div id="ausnz">
-        <a class="top">AUSTRALIA AND NEW ZEALAND</a>
-<div id="aunz"></div>
+      <a class="top">AUSTRALIA AND NEW ZEALAND</a>
+      <div id="aunz"></div>
     </div>
-    
-</body>
+    <footer></footer>
+  </body>
 </html>
-<script src="./world.js"></script>
+<script type="module" src="./Script/world.js"></script>
+<script type="module" src="./Script/nav.js"></script>
+<script type="module" src="./Script/footer.js"></script>
