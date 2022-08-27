@@ -9,9 +9,9 @@ let main=async (val)=>{
 
 let append=(data,container)=>{
     let count=0;
-    console.log(data)
+    //console.log(data)
     data.forEach((ele)=>{
-        if(count<=5){
+        if(count<=5 && ele.urlToImage!=null){
             let div=document.createElement("div")
         div.setAttribute("class","box")
         let p=document.createElement("h4")
@@ -43,7 +43,7 @@ let append2=(data,container)=>{
     let count=0
     
     data.forEach((ele)=>{
-        if(count<4){
+        if(count<4 && ele.urlToImage!=null){
             let div=document.createElement("div")
         div.setAttribute("class","box2")
         let p=document.createElement("h4")
@@ -64,8 +64,6 @@ let append2=(data,container)=>{
         count++;
     })
 
-    //sai
-
     function mainnews(data){
         localStorage.setItem("newsdata",JSON.stringify(data))
         window.location.reload()
@@ -75,11 +73,13 @@ let append2=(data,container)=>{
 export {main,append,append2}
 /*
 let main1=async ()=>{
-    let res=await fetch("https://newsapi.org/v2/top-headlines?country=in&category=latest&apiKey=3b0d1c2c88ac4818b1a323df1f5eb64b")
+    let res=await fetch("https://newsapi.org/v2/top-headlines?country=in&category=politics&apiKey=3b0d1c2c88ac4818b1a323df1f5eb64b")
     let data=await res.json()
     console.log(data)
     append(data.articles)
-https://newsapi.org/v2/everything?q=apple&from=2022-08-23&to=2022-08-23&sortBy=popularity&apiKey=3b0d1c2c88ac4818b1a323df1f5eb64b"
+//https://newsapi.org/v2/everything?q=apple&from=2022-08-23&to=2022-08-23&sortBy=popularity&apiKey=3b0d1c2c88ac4818b1a323df1f5eb64b"
+
+
 }
 main1()
 */
