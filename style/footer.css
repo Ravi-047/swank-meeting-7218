@@ -26,7 +26,7 @@
   padding: 5px 15px 0px 15px;
 }
 #a_anchor_footer {
-  width: 90%;
+  width: 93%;
   margin: auto;
   margin-top: 20px;
   display: flex;
@@ -36,9 +36,19 @@
 }
 #a_anchor_footer > a {
   text-decoration: none;
+  border-right: 2px solid lightgray;
   color: gray;
   font-weight: bold;
-  padding: 0px 10px 0px 10px;
+  font-size: 13px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#a_anchor_footer > a:last-child {
+  border: none;
 }
 #a_anchor_footer > a:hover {
   color: black;

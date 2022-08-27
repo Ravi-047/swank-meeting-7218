@@ -1,0 +1,340 @@
+#body {
+  width: 80%;
+  margin: auto;
+}
+hr {
+  border: 2px solid gray;
+  margin-top: 40px;
+}
+.Heading {
+  padding: 3px;
+  margin-top: 20px;
+  /* width: 20%; */
+  text-decoration: underline;
+  text-decoration-color: red;
+
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#news {
+  display: flex;
+  justify-content: space-between;
+  border: px solid red;
+}
+
+#news > div {
+  border: px solid black;
+}
+
+#south-state {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+#south-state > h3 > a {
+  text-decoration: none;
+  color: black;
+}
+#south-state > h3 > a:hover {
+  border-bottom: 2px solid red;
+  cursor: pointer;
+}
+
+#container-up {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+
+#container-up > div {
+  border: px solid;
+}
+
+#container-up > div > h2 {
+  margin-left: 5px;
+}
+
+#container-up > div > img {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#container-down {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+
+#container-down > div {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 8px;
+}
+
+#container-down > div > h2 {
+  margin-left: 5px;
+}
+
+#container-down > div > img {
+  width: 98%;
+  height: 90%;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#ENTERTAINMENT-body {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Entertanment part */
+#ENTERTAINMENT-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  padding: 5px;
+}
+
+#ENTERTAINMENT-container > div {
+  border: px solid;
+}
+
+#ENTERTAINMENT-container > div > h2 {
+  margin-left: 5px;
+}
+
+#ENTERTAINMENT-container > div > img {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#ENTERTAINMENT-container-down {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  padding: 5px;
+}
+
+#ENTERTAINMENT-container-down > div {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 8px;
+}
+
+#ENTERTAINMENT-container-down > div > h2 {
+  margin-left: 5px;
+}
+
+#ENTERTAINMENT-container-down > div > img {
+  width: 98%;
+  height: 90%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* JOBS AND EDUCATIONS */
+
+#jobs-container-down {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+
+#jobs-container-down > div {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 8px;
+}
+
+#jobs-container-down > div > h2 {
+  margin-left: 5px;
+}
+
+#jobs-container-down > div > img {
+  width: 98%;
+  height: 90%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* SPORTS.......... */
+
+#sports-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  padding: 5px;
+}
+
+#sports-container > div {
+  border: px solid;
+}
+
+#sports-container > div > h2 {
+  margin-left: 5px;
+}
+
+#sports-container > div > img {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#sports-container-down {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  padding: 5px;
+}
+
+#sports-container-down > div {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 8px;
+}
+
+#sports-container-down > div > h2 {
+  margin-left: 5px;
+}
+
+#sports-container-down > div > img {
+  width: 98%;
+  height: 90%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* LIFE STYLE */
+
+#life-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  padding: 5px;
+}
+
+#life-container > div {
+  border: px solid;
+}
+
+#life-container > div > h2 {
+  margin-left: 5px;
+}
+
+#life-container > div > img {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#life-container-down {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  padding: 5px;
+}
+
+#life-container-down > div {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 8px;
+}
+
+#life-container-down > div > h2 {
+  margin-left: 5px;
+}
+
+#life-container-down > div > img {
+  width: 98%;
+  height: 90%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* WORLD.... */
+
+#world-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  padding: 5px;
+}
+
+#world-container > div {
+  border: px solid;
+}
+
+#world-container > div > h2 {
+  margin-left: 5px;
+}
+
+#world-container > div > img {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#world-container-down {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  padding: 5px;
+}
+
+#world-container-down > div {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 8px;
+}
+
+#world-container-down > div > h2 {
+  margin-left: 5px;
+}
+
+#world-container-down > div > img {
+  width: 98%;
+  height: 90%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* BUSINESS............................... */
+
+#business-body {
+  margin-bottom: 50px;
+}
+
+#business-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  padding: 5px;
+}
+
+#business-container > div {
+  border: px solid;
+}
+
+#business-container > div > h2 {
+  margin-left: 5px;
+}
+
+#business-container > div > img {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#business-container-down {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  padding: 5px;
+}
+
+#business-container-down > div {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 8px;
+}
+
+#business-container-down > div > h2 {
+  margin-left: 5px;
+}
+
+#business-container-down > div > img {
+  width: 98%;
+  height: 90%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

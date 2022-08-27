@@ -17,13 +17,15 @@ async function getdata(url) {
 }
 
 function appenddata(actualdata) {
-    for (let i = 0; i <= 3; i++) {
+    for (let i = 0; i <= 4; i++) {
         if (actualdata[i].urlToImage == null) {
             continue;
         } else {
 
             let box = document.createElement("div");
-
+            box.addEventListener("click", function () {
+                showdata(actualdata[i])
+            })
             let head = document.createElement("h2");
             head.innerText = actualdata[i].title;
             head.style.fontSize = "25px"
@@ -47,6 +49,7 @@ function appenddata(actualdata) {
     }
 }
 
+
 export { getdata, appenddata }  // .--------------------------------------------------------- Exporting function;
 
 
@@ -68,7 +71,7 @@ async function seconddata(url) {
 
 function second(actualdata) {
 
-    for (let j = 5; j <= 22; j++) {
+    for (let j = 5; j <= 19; j++) {
         if (actualdata[j].urlToImage === null) {
             continue;
         }
