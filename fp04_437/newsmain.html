@@ -57,7 +57,31 @@
     let container3=document.querySelector("#box6")
     append2(res3,container3)
 
-    
+    let res4=await main("https://newsapi.org/v2/top-headlines?country=in&category=politics&apiKey=3b0d1c2c88ac4818b1a323df1f5eb64b")
+    //let container4=document.querySelector("#main_conatiner5")
+    news_append(res4)
+    function news_append(data){
+        let count=0;
+        data.forEach((ele)=>{
+        if(count<6 && ele.urlToImage!=null){
+            let div=document.createElement("div")
+            let div2=document.createElement("div")
+        div.setAttribute("class","box2")
+        let p=document.createElement("h4")
+        let img=document.createElement("img")
+        let hr=document.createElement("hr")
+        p.innerText=ele.title
+        img.src=ele.urlToImage;
+        div.append(img,p)
+        div2.append(div)
+        div2.setAttribute("class","newsbox")
+        document.querySelector("#main_conatiner5").append(div2)
+        }else{
+            return
+        }
+        count++;
+    })
+    }
    
    
    function data_append(){
