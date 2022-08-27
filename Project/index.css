@@ -3,7 +3,23 @@
     width: 80%;
     margin: auto;
 }
-
+hr{
+    border: 2px solid gray;
+    margin-top: 40px;
+}
+.Heading {
+    padding: 3px;
+    margin-top: 20px;
+    /* width: 20%; */
+    text-decoration: underline;
+    text-decoration-color: red;
+    
+    font-size: 30px;
+    font-weight: bold;
+     
+    
+ } 
+ 
 #news {
     display: flex;
     justify-content: space-between;
@@ -88,10 +104,8 @@
 
 }
 
-.Heading {
-   padding: 3px;
-   margin-top: 50px;
-} 
+
+
 
 /* Entertanment part */
 #ENTERTAINMENT-container {
@@ -269,6 +283,106 @@
     ;
 }
 
+/* WORLD.... */
+
+#world-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 5px;
+}
+
+#world-container>div {
+
+    border: px solid;
+}
+
+#world-container>div>h2 {
+    margin-left: 5px;
+}
+
+#world-container>div>img {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    ;
+}
+
+#world-container-down {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 5px;
+}
+
+#world-container-down>div {
+
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 8px;
+
+}
+
+#world-container-down>div>h2 {
+    margin-left: 5px;
+}
+
+#world-container-down>div>img {
+    width: 98%;
+    height: 90%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    ;
+}
+
+/* BUSINESS............................... */
+
+
+#business-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 5px;
+}
+
+#business-container>div {
+
+    border: px solid;
+}
+
+#business-container>div>h2 {
+    margin-left: 5px;
+}
+
+#business-container>div>img {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    ;
+}
+
+#business-container-down {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 5px;
+}
+
+#business-container-down>div {
+
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 8px;
+
+}
+
+#business-container-down>div>h2 {
+    margin-left: 5px;
+}
+
+#business-container-down>div>img {
+    width: 98%;
+    height: 90%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    ;
+}
 
 
 

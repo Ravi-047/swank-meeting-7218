@@ -62,12 +62,14 @@ async function getdata(){
 
     }
 
+
+    //ENTERTAINMENT  ...... ..............................................................................................................
+
     async function EntertanmentData(){
 
         try {
         
         let res= await fetch("https://newsapi.org/v2/everything?q=INDIAN ENTERTAINMENT&from=2022-08-24&sortBy=popularity&apiKey=650efccfef7a4b8b9959df4efa1cfc71")
-        //("https://newsapi.org/v2/top-headlines/sources?country=inapiKey=eb1cd6a6369142d08eacd7e381735525")//("https://newsapi.org/v2/everything?q=ENTERTAINMENT&from=2022-08-24&sortBy=popularity&apiKey=eb1cd6a6369142d08eacd7e381735525")
         
         let data=  await res.json();
         let actualdata=data.articles;
@@ -126,7 +128,7 @@ async function getdata(){
     
         }
 
-        // JOBS AND EDUCATION 
+        // JOBS AND EDUCATION  ...... ..............................................................................................................
 
         async function JobsData(){
 
@@ -178,13 +180,13 @@ async function getdata(){
         
             }
 
-            // SPORTS........
+            // SPORTS........ ...... ..............................................................................................................
 
             async function SportsData(){
 
                 try {
                 
-                let res= await fetch("https://newsapi.org/v2/everything?q=INDIAN CRICKET&from=2022-08-24&sortBy=popularity&apiKey=eb1cd6a6369142d08eacd7e381735525")
+                let res= await fetch("https://newsapi.org/v2/everything?q=INDIAN CRICKET&from=2022-08-24&sortBy=popularity&apiKey=650efccfef7a4b8b9959df4efa1cfc71")
                 //("https://newsapi.org/v2/top-headlines/sources?country=inapiKey=eb1cd6a6369142d08eacd7e381735525")//("https://newsapi.org/v2/everything?q=ENTERTAINMENT&from=2022-08-24&sortBy=popularity&apiKey=eb1cd6a6369142d08eacd7e381735525")
                 
                 let data=  await res.json();
@@ -244,12 +246,12 @@ async function getdata(){
             
                 }
 
-
+// LIFE STYLE ...... ..............................................................................................................
                 async function lifeStyleData(){
 
                     try {
                     
-                    let res= await fetch("https://newsapi.org/v2/everything?q=INDIAN LIFESTYLE&from=2022-08-24&sortBy=popularity&apiKey=eb1cd6a6369142d08eacd7e381735525")
+                    let res= await fetch("https://newsapi.org/v2/everything?q=INDIAN LIFESTYLE&from=2022-08-24&sortBy=popularity&apiKey=650efccfef7a4b8b9959df4efa1cfc71")
                     //("https://newsapi.org/v2/top-headlines/sources?country=inapiKey=eb1cd6a6369142d08eacd7e381735525")//("https://newsapi.org/v2/everything?q=ENTERTAINMENT&from=2022-08-24&sortBy=popularity&apiKey=eb1cd6a6369142d08eacd7e381735525")
                     
                     let data=  await res.json();
@@ -296,13 +298,13 @@ async function getdata(){
                        
                         
                         let div=document.createElement("div")
-                        let imgdiv=document.createElement("div")
+                        // let imgdiv=document.createElement("div")
                         let img=document.createElement('img')
                         img.src=ele[i].urlToImage
                         let h3=document.createElement('h3')
                         h3.innerText=ele[i].title
-                         imgdiv.append(img)
-                        div.append(imgdiv,h3)
+                        //  imgdiv.append(img)
+                        div.append(img,h3)
                         //console.log(div)
                         document.querySelector("#life-container-down").append(div)
                     
@@ -310,5 +312,144 @@ async function getdata(){
                         
                 
                     }
+
+
+
+// WORLD ...... ..............................................................................................................
+
+
+
+                    async function worldData(){
+
+                        try {
+                        
+                        let res= await fetch("https://newsapi.org/v2/everything?q=WORLD&from=2022-08-24&sortBy=popularity&apiKey=650efccfef7a4b8b9959df4efa1cfc71")
+                       
+                        
+                        let data=  await res.json();
+                        let actualdata=data.articles;
+                        if(actualdata!==undefined){
+                            world_appenddata(actualdata);
+                        
+                        
+                        
+                        }
+                        console.log(actualdata);
+                        
+                        } catch (error) {
+                           console.log(error);
+                        }
+                        
+                      
+                        }
+                        
+                        worldData();
+                    
+                        function world_appenddata(ele){
+                           // console.log(data)
+                           for (let i=1;i<=4;i++){
+                    
+                           
+                            
+                                let div=document.createElement("div")
+                                
+                                let img=document.createElement('img')
+                                img.src=ele[i].urlToImage
+                                let h2=document.createElement('h2')
+                                h2.innerText=ele[i].title
+                            
+                                div.append(img,h2)
+                                //console.log(div)
+                                document.querySelector("#world-container").append(div)
+                            
+                        }
+                    
+                           
+                        for (let i=6;i<=9;i++){
+                    
+                           
+                            
+                            let div=document.createElement("div")
+                            // let imgdiv=document.createElement("div")
+                            let img=document.createElement('img')
+                            img.src=ele[i].urlToImage
+                            let h3=document.createElement('h3')
+                            h3.innerText=ele[i].title
+                            //  imgdiv.append(img)
+                            div.append(img,h3)
+                            //console.log(div)
+                            document.querySelector("#world-container-down").append(div)
+                        
+                    }
+                            
+                    
+                        }
         
+    //BUSINESS ...... ..............................................................................................................
+     
+
+    async function businessData(){
+
+        try {
+        
+        let res= await fetch("https://newsapi.org/v2/everything?q=INDIAN BUSINESS&from=2022-08-24&sortBy=popularity&apiKey=650efccfef7a4b8b9959df4efa1cfc71")
+       
+        
+        let data=  await res.json();
+        let actualdata=data.articles;
+        if(actualdata!==undefined){
+            business_appenddata(actualdata);
+        
+        
+        
+        }
+        console.log(actualdata);
+        
+        } catch (error) {
+           console.log(error);
+        }
+        
+      
+        }
+        
+        businessData();
     
+        function business_appenddata(ele){
+           // console.log(data)
+           for (let i=1;i<=4;i++){
+    
+           
+            
+                let div=document.createElement("div")
+                
+                let img=document.createElement('img')
+                img.src=ele[i].urlToImage
+                let h2=document.createElement('h2')
+                h2.innerText=ele[i].title
+            
+                div.append(img,h2)
+                //console.log(div)
+                document.querySelector("#business-container").append(div)
+            
+        }
+    
+           
+        for (let i=6;i<=9;i++){
+    
+           
+            
+            let div=document.createElement("div")
+            // let imgdiv=document.createElement("div")
+            let img=document.createElement('img')
+            img.src=ele[i].urlToImage
+            let h3=document.createElement('h3')
+            h3.innerText=ele[i].title
+            //  imgdiv.append(img)
+            div.append(img,h3)
+            //console.log(div)
+            document.querySelector("#business-container-down").append(div)
+        
+    }
+            
+    
+        }
