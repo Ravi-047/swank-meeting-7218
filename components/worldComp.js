@@ -94,6 +94,8 @@ export { getdata, appenddata, america }; // . ---------------------------  Expor
 
 // >------------------------------------------------------------------------------------------------------------------------------- 
 
+// australia
+
 async function infodata(url) {
     try {
         let res = await fetch(url)
@@ -140,7 +142,7 @@ function third(realdata) {
 
 
 function ausnz(real) {
-    for (let j = 0; j <= 7; j++) {
+    for (let j = 0; j <= 4; j++) {
         if (real[j].urlToImage == null) {
             continue;
         }
@@ -170,6 +172,8 @@ export { infodata, third, ausnz };
 
 // >----------------------------------------------------------------------------------------------------------------------- 
 
+
+// newzeland
 
 async function to(url) {
     try {
@@ -242,7 +246,7 @@ export { to, ne, negi };
 
 // > -----------------------------------------------------------------------------------------------------------------
 
-
+// NEGHIBOUR
 
 async function neg(url) {
     try {
