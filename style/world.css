@@ -1,3 +1,20 @@
+#home_job_Education {
+  width: 85%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#home_job_Education > a > i {
+  color: black;
+}
+
+#home_job_Education > span {
+  font-size: 18px;
+  color: #383838;
+  font-weight: 400;
+}
+
 #container {
   display: flex;
   width: 100%;

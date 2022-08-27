@@ -2,7 +2,7 @@
   width: 80%;
   margin: auto;
 }
-hr {
+.line_gray {
   border: 2px solid gray;
   margin-top: 40px;
 }

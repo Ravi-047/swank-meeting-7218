@@ -1,6 +1,6 @@
 
 function navbar() {
-    return ` <!-- .on clicking three bars  -->
+  return ` <!-- .on clicking three bars  -->
     <div class="bar_div">
       <div id="logo__cut">
         <img
@@ -21,7 +21,7 @@ function navbar() {
       <div id="r_side_nav">
         <ul class="r_nav">
           <li>
-            <a href="">Nation</a>
+            <a href="Nation.html">Nation</a>
             <ul>
               <li>
                 <a href=""><i class="fa-solid fa-angles-right"></i>Crime</a>
@@ -45,7 +45,7 @@ function navbar() {
           </li>
 
           <li>
-            <a href="">South</a>
+            <a href="southMain.html">South</a>
             <ul>
               <li>
                 <a href=""
@@ -74,7 +74,7 @@ function navbar() {
           </li>
 
           <li>
-            <a href="">World</a>
+            <a href="world.html">World</a>
             <ul>
               <li>
                 <a href=""
@@ -108,7 +108,7 @@ function navbar() {
           </li>
 
           <li>
-            <a href="">Entertainment</a>
+            <a href="Entertainment.html">Entertainment</a>
             <ul>
               <li>
                 <a href=""><i class="fa-solid fa-angles-right"></i>Theatre</a>
@@ -160,11 +160,11 @@ function navbar() {
           </li>
 
           <li>
-            <a href="">Jobs & Education</a>
+            <a href="jobEducation.html">Jobs & Education</a>
           </li>
 
           <li>
-            <a href="">Sports</a>
+            <a href="sports.html">Sports</a>
             <ul>
               <li>
                 <a href=""
@@ -191,7 +191,7 @@ function navbar() {
           </li>
 
           <li>
-            <a href="">Technology</a>
+            <a href="technology.html">Technology</a>
             <ul>
               <li>
                 <a href=""><i class="fa-solid fa-angles-right"></i>Gadgets</a>
@@ -210,7 +210,7 @@ function navbar() {
           </li>
 
           <li>
-            <a href="">Lifestyle</a>
+            <a href="lifestyle.html">Lifestyle</a>
             <ul>
               <li>
                 <a href=""
@@ -343,17 +343,17 @@ function navbar() {
     </div>
 
     <div id="navbar_all_options">
-      <a href="" class="nav_option"
+      <a href="index.html" class="nav_option"
         ><i class="fa-solid fa-house-chimney"></i
       ></a>
-      <a href="" class="nav_option">Nation</a>
-      <a href="" class="nav_option">South</a>
-      <a href="" class="nav_option">World</a>
-      <a href="" class="nav_option">Entertainment</a>
-      <a href="" class="nav_option">Jobs & Education</a>
-      <a href="" class="nav_option">Sports</a>
-      <a href="" class="nav_option">Technology</a>
-      <a href="" class="nav_option">Lifestyle</a>
+      <a href="Nation.html" class="nav_option">Nation</a>
+      <a href="southMain.html" class="nav_option">South</a>
+      <a href="world.html" class="nav_option">World</a>
+      <a href="Entertainment.html" class="nav_option">Entertainment</a>
+      <a href="jobEducation.html" class="nav_option">Jobs & Education</a>
+      <a href="sports.html" class="nav_option">Sports</a>
+      <a href="technology.html" class="nav_option">Technology</a>
+      <a href="lifestyle.html" class="nav_option">Lifestyle</a>
       <a href="" class="nav_option">Gallery</a>
       <div id="more_function">
         <a href="" class="nav_option"
