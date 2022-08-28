@@ -17,7 +17,7 @@ async function EntertanmentData() {
 
     try {
 
-        let res = await fetch("https://newsapi.org/v2/everything?q=INDIAN ENTERTAINMENT&from=2022-08-24&sortBy=popularity&apiKey=650efccfef7a4b8b9959df4efa1cfc71")
+        let res = await fetch(`https://newsapi.org/v2/everything?q=INDIAN ENTERTAINMENT&from=2022-08-24&sortBy=popularity&apiKey=${apiKey}`)
 
         let data = await res.json();
         let actualdata = data.articles;
@@ -82,7 +82,7 @@ async function JobsData() {
 
     try {
 
-        let res = await fetch("https://newsapi.org/v2/everything?q=INDIAN Education&from=2022-08-24&sortBy=popularity&apiKey=650efccfef7a4b8b9959df4efa1cfc71")
+        let res = await fetch(`https://newsapi.org/v2/everything?q=INDIAN Education&from=2022-08-24&sortBy=popularity&apiKey=${apiKey}`)
         //("https://newsapi.org/v2/top-headlines/sources?country=inapiKey=eb1cd6a6369142d08eacd7e381735525")//("https://newsapi.org/v2/everything?q=ENTERTAINMENT&from=2022-08-24&sortBy=popularity&apiKey=eb1cd6a6369142d08eacd7e381735525")
 
         let data = await res.json();
@@ -134,7 +134,7 @@ async function SportsData() {
 
     try {
 
-        let res = await fetch("https://newsapi.org/v2/everything?q=INDIAN CRICKET&from=2022-08-24&sortBy=popularity&apiKey=650efccfef7a4b8b9959df4efa1cfc71")
+        let res = await fetch(`https://newsapi.org/v2/everything?q=INDIAN CRICKET&from=2022-08-24&sortBy=popularity&apiKey=${apiKey}`)
         //("https://newsapi.org/v2/top-headlines/sources?country=inapiKey=eb1cd6a6369142d08eacd7e381735525")//("https://newsapi.org/v2/everything?q=ENTERTAINMENT&from=2022-08-24&sortBy=popularity&apiKey=eb1cd6a6369142d08eacd7e381735525")
 
         let data = await res.json();
@@ -199,7 +199,7 @@ async function lifeStyleData() {
 
     try {
 
-        let res = await fetch("https://newsapi.org/v2/everything?q=INDIAN LIFESTYLE&from=2022-08-24&sortBy=popularity&apiKey=650efccfef7a4b8b9959df4efa1cfc71")
+        let res = await fetch(`https://newsapi.org/v2/everything?q=INDIAN LIFESTYLE&from=2022-08-24&sortBy=popularity&apiKey=${apiKey}`)
         //("https://newsapi.org/v2/top-headlines/sources?country=inapiKey=eb1cd6a6369142d08eacd7e381735525")//("https://newsapi.org/v2/everything?q=ENTERTAINMENT&from=2022-08-24&sortBy=popularity&apiKey=eb1cd6a6369142d08eacd7e381735525")
 
         let data = await res.json();
@@ -271,7 +271,7 @@ async function worldData() {
 
     try {
 
-        let res = await fetch("https://newsapi.org/v2/everything?q=WORLD&from=2022-08-24&sortBy=popularity&apiKey=650efccfef7a4b8b9959df4efa1cfc71")
+        let res = await fetch(`https://newsapi.org/v2/everything?q=WORLD&from=2022-08-24&sortBy=popularity&apiKey=${apiKey}`)
 
 
         let data = await res.json();
@@ -340,7 +340,7 @@ async function businessData() {
 
     try {
 
-        let res = await fetch("https://newsapi.org/v2/everything?q=INDIAN BUSINESS&from=2022-08-24&sortBy=popularity&apiKey=650efccfef7a4b8b9959df4efa1cfc71")
+        let res = await fetch(`https://newsapi.org/v2/everything?q=INDIAN BUSINESS&from=2022-08-24&sortBy=popularity&apiKey=${apiKey}`)
 
 
         let data = await res.json();
