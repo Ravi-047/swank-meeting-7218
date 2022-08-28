@@ -142,7 +142,7 @@ function third(realdata) {
 
 
 function ausnz(real) {
-    for (let j = 0; j <= 4; j++) {
+    for (let j = 0; j < 4; j++) {
         if (real[j].urlToImage == null) {
             continue;
         }

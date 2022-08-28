@@ -3,7 +3,7 @@ console.log("working gallery.js");
 
 const api_key = "7cc87a95151e465eb9101a1f1bfd02d9"
 
-import { getData, append_Data, append_2nd_Data } from "./galleryComp.js";
+import { getData, append_Data, append_2nd_Data } from "../components/galleryComp.js";
 
 const link_1 = `https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=${api_key}`
 

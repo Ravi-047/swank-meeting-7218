@@ -263,7 +263,7 @@ function navbar() {
             </ul>
           </li>
 
-          <li><a href="">Gallery</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
           <li><a href="">Business</a></li>
           <li><a href="">Opinion</a></li>
           <li><a href="">Sunday Chronicle</a></li>
@@ -354,7 +354,7 @@ function navbar() {
       <a href="sports.html" class="nav_option">Sports</a>
       <a href="technology.html" class="nav_option">Technology</a>
       <a href="lifestyle.html" class="nav_option">Lifestyle</a>
-      <a href="" class="nav_option">Gallery</a>
+      <a href="gallery.html" class="nav_option">Gallery</a>
       <div id="more_function">
         <a href="" class="nav_option"
           >More...<i class="fa-solid fa-angle-down"></i
