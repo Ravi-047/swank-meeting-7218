@@ -48,7 +48,11 @@ function appenddata(actualdata) {
         }
     }
 }
-
+function showdata(el) {
+    console.log(el);
+    localStorage.setItem("newsdata", JSON.stringify(el))
+    window.location.href = "newsmain.html"
+}
 
 export { getdata, appenddata }  // .--------------------------------------------------------- Exporting function;
 
@@ -76,6 +80,9 @@ function second(actualdata) {
             continue;
         }
         let box2 = document.createElement("div");
+        box2.addEventListener("click", function () {
+            showdata(actualdata[i])
+        })
         let head2 = document.createElement("h2");
         head2.innerText = actualdata[j].title;
         head2.style.fontSize = "15px";
@@ -117,6 +124,9 @@ function third(realdata) {
             continue;
         }
         let box4 = document.createElement("div");
+        box4.addEventListener("click", function () {
+            showdata(actualdata[i])
+        })
         let head4 = document.createElement("h2");
         head4.innerText = realdata[p].title;
         head4.style.fontSize = "15px";

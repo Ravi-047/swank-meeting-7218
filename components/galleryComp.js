@@ -24,6 +24,9 @@ let append_Data = (data, container) => {
             main_div.className = "r_enter_techno_nation_business_container"
 
             let div_1 = document.createElement("div");
+            div_1.addEventListener("click", function () {
+                showdata(ele)
+            })
             let div_img = document.createElement("div");
             let div_p = document.createElement("div");
 
@@ -58,6 +61,9 @@ let append_2nd_Data = (data, container) => {
             main_div.className = "r_enter_techno_nation_business_container"
 
             let div_1 = document.createElement("div");
+            div_1.addEventListener("click", function () {
+                showdata(ele)
+            })
             let div_img = document.createElement("div");
             let div_p = document.createElement("div");
 
@@ -79,6 +85,13 @@ let append_2nd_Data = (data, container) => {
         }
         count++;
     })
+}
+
+
+function showdata(el) {
+    console.log(el);
+    localStorage.setItem("newsdata", JSON.stringify(el))
+    window.location.href = "newsmain.html"
 }
 
 export { getData, append_Data, append_2nd_Data };

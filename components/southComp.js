@@ -19,6 +19,9 @@ function appenddata(ele) {
     // console.log(data)
     for (let i = 1; i <= 4; i++) {
         let div = document.createElement("div")
+        div.addEventListener("click", function () {
+            showdata(ele[i])
+        })
         let img = document.createElement('img')
         img.src = ele[i].urlToImage
         let h2 = document.createElement('h2')
@@ -33,6 +36,9 @@ function appenddata(ele) {
 
     for (let i = 5; i <= 8; i++) {
         let div = document.createElement("div")
+        div.addEventListener("click", function () {
+            showdata(ele[i])
+        })
         let img = document.createElement('img')
         img.src = ele[i].urlToImage
         let h3 = document.createElement('h3')
@@ -44,6 +50,12 @@ function appenddata(ele) {
     }
 }
 
+
+function showdata(el) {
+    console.log(el);
+    localStorage.setItem("newsdata", JSON.stringify(el))
+    window.location.href = "newsmain.html"
+}
 
 export { getdata, appenddata };
 

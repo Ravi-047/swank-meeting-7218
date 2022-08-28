@@ -33,13 +33,18 @@ function appenddata(actualdata) {
 
         box.append(image, head, des);
         box.addEventListener("click", function () {
-            myfunction(actualdata[i]);
+            showdata(actualdata[i]);
         })
 
         document.querySelector("#first").append(box);
     }
 }
 
+function showdata(el) {
+    console.log(el);
+    localStorage.setItem("newsdata", JSON.stringify(el))
+    window.location.href = "newsmain.html"
+}
 
 
 
@@ -49,6 +54,10 @@ function america(actualdata) {
             continue;
         } else {
             let box8 = document.createElement("div");
+            box8.addEventListener("click", function () {
+                showdata(actualdata[j]);
+            })
+
             box8.style.marginLeft = "30px"
             let head8 = document.createElement("h2");
             head8.innerText = actualdata[j].title;
@@ -71,6 +80,10 @@ function america(actualdata) {
             continue;
         } else {
             let box9 = document.createElement("div");
+            box9.addEventListener("click", function () {
+                showdata(actualdata[k]);
+            })
+
             box9.style.margin = "40px"
             box9.style.display = "flex"
             let head9 = document.createElement("h2");
@@ -123,6 +136,10 @@ function third(realdata) {
             continue;
         }
         let box4 = document.createElement("div");
+        box4.addEventListener("click", function () {
+            showdata(realdata[p]);
+        })
+
         let head4 = document.createElement("h2");
         head4.innerText = realdata[p].title;
         head4.style.fontSize = "15px";
@@ -147,6 +164,9 @@ function ausnz(real) {
             continue;
         }
         let box10 = document.createElement("div");
+        box10.addEventListener("click", function () {
+            showdata(real[j]);
+        })
         box10.style.marginLeft = "30px"
         let head10 = document.createElement("h2");
         head10.innerText = real[j].title;
@@ -196,6 +216,9 @@ function ne(actualdata) {
             continue;
         }
         let box2 = document.createElement("div");
+        box2.addEventListener("click", function () {
+            showdata(actualdata[j]);
+        })
         let head2 = document.createElement("h2");
         head2.innerText = actualdata[j].title;
         head2.style.fontSize = "15px";
@@ -217,6 +240,9 @@ function negi(realdata) {
             continue;
         }
         let box7 = document.createElement("div");
+        box7.addEventListener("click", function () {
+            showdata(realdata[j]);
+        })
         box7.style.marginLeft = "30px"
         let head7 = document.createElement("h2");
         head7.innerText = realdata[j].title;
@@ -289,6 +315,9 @@ function asia(realda) {
         }
         else {
             let box8 = document.createElement("div");
+            box8.addEventListener("click", function () {
+                showdata(realda[j]);
+            })
             box8.style.marginLeft = "30px"
             let head8 = document.createElement("h2");
             head8.innerText = realda[j].title;
@@ -317,6 +346,9 @@ function asia(realda) {
         }
         else {
             let box9 = document.createElement("div");
+            box9.addEventListener("click", function () {
+                showdata(realda[k]);
+            })
             box9.style.margin = "40px"
             box9.style.display = "flex"
             let head9 = document.createElement("h2");
@@ -369,6 +401,9 @@ function middleeast(reald) {
             continue;
         }
         let box10 = document.createElement("div");
+        box10.addEventListener("click", function () {
+            showdata(reald[j]);
+        })
         box10.style.marginLeft = "30px"
         let head10 = document.createElement("h2");
         head10.innerText = reald[j].title;
@@ -419,6 +454,9 @@ function europ(reald) {
         }
         else {
             let box10 = document.createElement("div");
+            box10.addEventListener("click", function () {
+                showdata(reald[j]);
+            })
             box10.style.marginLeft = "30px"
             let head10 = document.createElement("h2");
             head10.innerText = reald[j].title;
@@ -471,6 +509,9 @@ function africa(actualdata) {
         }
         else {
             let box8 = document.createElement("div");
+            box8.addEventListener("click", function () {
+                showdata(actualdata[j]);
+            })
             box8.style.marginLeft = "30px"
             let head8 = document.createElement("h2");
             head8.innerText = actualdata[j].title;
@@ -497,6 +538,9 @@ function africa(actualdata) {
             continue;
         } else {
             let box9 = document.createElement("div");
+            box9.addEventListener("click", function () {
+                showdata(actualdata[k]);
+            })
             box9.style.margin = "40px"
             box9.style.display = "flex"
             let head9 = document.createElement("h2");

@@ -27,6 +27,9 @@ let append = (data) => {
 
         let main_box = document.createElement("div");
         main_box.className = "main_news_div";
+        main_box.addEventListener("click", function () {
+            showdata2(el)
+        })
 
         let img_div = document.createElement("div");
         img_div.className = "main_news_image";
@@ -51,6 +54,12 @@ let append = (data) => {
     })
 }
 
+
+function showdata2(el) {
+    console.log(el);
+    localStorage.setItem("newsdata", JSON.stringify(el))
+    window.location.href = "newsmain.html"
+}
 
 
 

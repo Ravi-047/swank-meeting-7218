@@ -45,6 +45,9 @@ function Entertanment_appenddata(ele) {
 
 
         let div = document.createElement("div")
+        div.addEventListener("click", function () {
+            showdata(ele[i])
+        })
         let img = document.createElement('img')
         img.src = ele[i].urlToImage
         let h2 = document.createElement('h2')
@@ -62,6 +65,9 @@ function Entertanment_appenddata(ele) {
 
 
         let div = document.createElement("div")
+        div.addEventListener("click", function () {
+            showdata(ele[i])
+        })
         let img = document.createElement('img')
         img.src = ele[i].urlToImage
         let h3 = document.createElement('h3')
@@ -75,6 +81,14 @@ function Entertanment_appenddata(ele) {
 
 
 }
+
+
+function showdata(el) {
+    console.log(el);
+    localStorage.setItem("newsdata", JSON.stringify(el))
+    window.location.href = "newsmain.html"
+}
+
 
 // JOBS AND EDUCATION  ...... ..............................................................................................................
 
@@ -114,6 +128,9 @@ function Jobs_appenddata(ele) {
 
 
         let div = document.createElement("div")
+        div.addEventListener("click", function () {
+            showdata(ele[i])
+        })
         let img = document.createElement('img')
         img.src = ele[i].urlToImage
         let h3 = document.createElement('h3')
@@ -163,6 +180,9 @@ function Sports_appenddata(ele) {
 
 
         let div = document.createElement("div")
+        div.addEventListener("click", function () {
+            showdata(ele[i])
+        })
         let img = document.createElement('img')
         img.src = ele[i].urlToImage
         let h2 = document.createElement('h2')
@@ -180,6 +200,9 @@ function Sports_appenddata(ele) {
 
 
         let div = document.createElement("div")
+        div.addEventListener("click", function () {
+            showdata(ele[i])
+        })
         let img = document.createElement('img')
         img.src = ele[i].urlToImage
         let h3 = document.createElement('h3')
@@ -228,6 +251,9 @@ function lifeStyle_appenddata(ele) {
 
 
         let div = document.createElement("div")
+        div.addEventListener("click", function () {
+            showdata(ele[i])
+        })
 
         let img = document.createElement('img')
         img.src = ele[i].urlToImage
@@ -246,6 +272,9 @@ function lifeStyle_appenddata(ele) {
 
 
         let div = document.createElement("div")
+        div.addEventListener("click", function () {
+            showdata(ele[i])
+        })
         // let imgdiv=document.createElement("div")
         let img = document.createElement('img')
         img.src = ele[i].urlToImage
@@ -300,6 +329,9 @@ function world_appenddata(ele) {
 
 
         let div = document.createElement("div")
+        div.addEventListener("click", function () {
+            showdata(ele[i])
+        })
 
         let img = document.createElement('img')
         img.src = ele[i].urlToImage
@@ -318,6 +350,9 @@ function world_appenddata(ele) {
 
 
         let div = document.createElement("div")
+        div.addEventListener("click", function () {
+            showdata(ele[i])
+        })
         // let imgdiv=document.createElement("div")
         let img = document.createElement('img')
         img.src = ele[i].urlToImage
@@ -369,6 +404,9 @@ function business_appenddata(ele) {
 
 
         let div = document.createElement("div")
+        div.addEventListener("click", function () {
+            showdata(ele[i])
+        })
 
         let img = document.createElement('img')
         img.src = ele[i].urlToImage
@@ -387,6 +425,10 @@ function business_appenddata(ele) {
 
 
         let div = document.createElement("div")
+        div.addEventListener("click", function () {
+            showdata(ele[i])
+        })
+
         // let imgdiv=document.createElement("div")
         let img = document.createElement('img')
         img.src = ele[i].urlToImage

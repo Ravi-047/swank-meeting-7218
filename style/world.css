@@ -48,6 +48,7 @@
   margin-top: 30px;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 5px;
 }
 #third > div {
   display: flex;
@@ -55,6 +56,7 @@
   margin-top: 30px;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 5px;
 }
 .top {
   border-bottom: 3px solid red;
@@ -120,17 +122,33 @@
   width: 60%;
   display: flex;
 }
+
+#mid > div {
+  padding-bottom: 20px;
+}
 #europ {
   width: 60%;
   display: flex;
+}
+
+#europ > div {
+  padding-bottom: 20px;
 }
 #aunz {
   width: 60%;
   display: flex;
 }
+
+#aunz > div {
+  padding-bottom: 20px;
+}
 #neg {
   width: 60%;
   display: flex;
+}
+
+#neg > div {
+  padding-bottom: 20px;
 }
 #asfirst {
   display: flex;
