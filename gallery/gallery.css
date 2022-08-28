@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#r_main_gallery_container {
+  width: 85%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+#r_gallery_box {
+  display: flex;
+  gap: 1%;
+  align-items: center;
+  background: lightgray;
+  box-shadow: rgba(0, 0, 0, 0.827) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.r_heading_border_red {
+  border-bottom: 3px solid red;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+#r_topgallery_section {
+  width: 65%;
+}
+
+#r_topgallery_section > div {
+  width: 100%;
+  margin-top: 10px;
+  height: 500px;
+}
+
+#r_topgallery_section > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: rgb(0, 0, 0) 0px 2px 8px 0px;
+  border-radius: 10px;
+}
+
+#r_more_gallery_section {
+  width: 34%;
+  height: 530px;
+}
+
+#r_data_flex_section {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.r_image_and_data {
+  display: flex;
+  gap: 20px;
+  padding: 5px;
+}
+
+.r_image_and_data > div:first-child {
+  width: 80%;
+  height: 111px;
+}
+
+.r_image_and_data > div:first-child > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: rgb(0, 0, 0) 0px 2px 8px 0px;
+  border-radius: 5px;
+}
+
+.r_image_and_data > div:last-child {
+  width: 70%;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.r_image_and_data:hover {
+  box-shadow: rgb(0, 0, 0) 0px 2px 8px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* . ----------------------------------------------------------------------------  first container end  */
+
+.r_enter_techno_nation_business_container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.r_enter_techno_nation_business_container > div {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.r_enter_techno_nation_business_container > div > div:first-child {
+  width: 100%;
+  height: 150px;
+}
+
+.r_enter_techno_nation_business_container > div > div:last-child {
+  padding: 10px;
+}
+
+.r_enter_techno_nation_business_container > div > div > img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  box-shadow: rgb(0, 0, 0) 0px 2px 8px 0px;
+  object-fit: cover;
+}
+
+/* .--------------------------------------------------------------- second container end  */
+
+.r_life_sports_world_science {
+  background: #e6e6e6;
+  padding: 10px;
+  padding-top: 20px;
+  border-radius: 10px;
+  box-shadow: rgb(0, 0, 0) 0px 2px 8px 0px;
+  margin-bottom: 30px;
+}
+
+.r_back_gray_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 50px;
+  gap: 30px;
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 20px;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+.r_back_gray_container > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.r_back_gray_container > div > div:first-child {
+  width: 100%;
+  height: 250px;
+}
+
+.r_back_gray_container > div > div:last-child {
+  padding: 10px;
+}
+
+.r_back_gray_container > div > div > img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  box-shadow: rgb(0, 0, 0) 0px 2px 8px 0px;
+  object-fit: cover;
+}
