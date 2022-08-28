@@ -5,7 +5,7 @@ const api_key = "0400744487794b96b2a7c9d61d7d135c";
 import { getdata, appenddata, america } from "../components/worldComp.js"; // .--------------- importing  function
 
 
-const link_1 = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${api_key}`
+const link_1 = `https://newsapi.org/v2/top-headlines?country=us&category=general&apiKey=${api_key}`
 
 let response_1 = await getdata(link_1)
 console.log(response_1);
@@ -19,7 +19,7 @@ america(response_1)
 import { infodata, third, ausnz } from "../components/worldComp.js";  // .--------------- importing  function
 
 
-const link_2 = `https://newsapi.org/v2/top-headlines?country=nz&apiKey=${api_key}&category=general`
+const link_2 = `https://newsapi.org/v2/top-headlines?country=in&category=general&apiKey=${api_key}`
 
 let response_2 = await infodata(link_2)
 third(response_2)
@@ -31,7 +31,7 @@ ausnz(response_2)
 
 import { to, ne, negi } from "../components/worldComp.js";   // .--------------- importing  function
 
-const link_3 = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${api_key}&category=general`
+const link_3 = `https://newsapi.org/v2/top-headlines?country=nz&category=general&apiKey=${api_key}`
 
 let response_3 = await to(link_3)
 console.log('response_3 :>> ', response_3);
@@ -43,7 +43,7 @@ negi(response_3)
 
 
 
-const link_4 = `https://newsapi.org/v2/top-headlines?country=ph&apiKey=${api_key}&category=general`
+const link_4 = `https://newsapi.org/v2/top-headlines?country=za&category=general&apiKey=${api_key}`
 
 
 
@@ -58,7 +58,7 @@ const link_4 = `https://newsapi.org/v2/top-headlines?country=ph&apiKey=${api_key
 
 // ASIA PAGE // 
 
-const link_5 = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${api_key}&category=general`
+const link_5 = `https://newsapi.org/v2/top-headlines?country=ph&category=general&apiKey=${api_key}`
 
 
 import { as, asia } from "../components/worldComp.js";   // .--------------- importing  function
@@ -74,7 +74,7 @@ asia(response_5);
 
 import { middle, middleeast } from "../components/worldComp.js";  //.--------------- importing  function
 
-const link_6 = `https://newsapi.org/v2/top-headlines?country=sa&apiKey=${api_key}&category=general`
+const link_6 = `https://newsapi.org/v2/top-headlines?country=sa&category=general&apiKey=${api_key}`
 
 let response_6 = await middle(link_6);
 middleeast(response_6);
@@ -86,7 +86,7 @@ middleeast(response_6);
 
 import { euro, europ } from "../components/worldComp.js"; // .--------------- importing  function
 
-const link_7 = `https://newsapi.org/v2/top-headlines?country=sg&apiKey=${api_key}&category=general`
+const link_7 = `https://newsapi.org/v2/top-headlines?country=us&category=general&apiKey=${api_key}`
 
 let response_7 = await euro(link_7);
 europ(response_7);
@@ -98,7 +98,7 @@ europ(response_7);
 
 import { afric, africa } from "../components/worldComp.js";   // .--------------- importing  function
 
-const link_8 = `https://newsapi.org/v2/top-headlines?country=za&apiKey=${api_key}&category=general`
+const link_8 = `https://newsapi.org/v2/top-headlines?country=nz&category=general&apiKey=${api_key}`
 
 let response_8 = await afric(link_8);
 africa(response_8);
