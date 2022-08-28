@@ -73,7 +73,7 @@ let append2=(data,container)=>{
 export {main,append,append2}
 /*
 let main1=async ()=>{
-    let res=await fetch("https://newsapi.org/v2/top-headlines?country=in&category=politics&apiKey=3b0d1c2c88ac4818b1a323df1f5eb64b")
+    let res=await fetch("https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=3b0d1c2c88ac4818b1a323df1f5eb64b")
     let data=await res.json()
     console.log(data)
     append(data.articles)
