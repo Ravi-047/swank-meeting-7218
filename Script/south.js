@@ -1,5 +1,5 @@
 
-const apiKey = "650efccfef7a4b8b9959df4efa1cfc71"
+const apiKey = "26691ce9f01e4e11b699c5aa720bdb1c"
 
 
 import { getdata, appenddata } from "../components/southComp.js"; //.---------------importing function;

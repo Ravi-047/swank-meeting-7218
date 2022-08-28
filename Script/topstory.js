@@ -4,7 +4,7 @@ import { seconddata, second } from "../components/sotryTop.js";
 import { infodata, third } from "../components/sotryTop.js";
 
 
-let key = "b12dcc7b5f604de9b71fb6cff5fd3996";
+let key = "26691ce9f01e4e11b699c5aa720bdb1c";
 const link = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${key}`
 
 
@@ -15,7 +15,7 @@ let append_Data = document.getElementById("first");
 appenddata(response, append_Data);
 
 
-const link_2 = `https://newsapi.org/v2/top-headlines?country=in&apiKey=b12dcc7b5f604de9b71fb6cff5fd3996&category=general`
+const link_2 = `https://newsapi.org/v2/top-headlines?country=in&apiKey=26691ce9f01e4e11b699c5aa720bdb1c&category=general`
 
 let response_3 = await infodata(link_2);
 console.log('response_3 :>> ', response_3);

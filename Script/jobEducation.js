@@ -1,7 +1,7 @@
 console.log("working jobEducation.js");
 
 let getData = async (page_number, per_page) => {
-    const url = `https://newsapi.org/v2/everything?q=indian education&pageSize=${per_page}&page=${page_number}&apiKey=0400744487794b96b2a7c9d61d7d135c`
+    const url = `https://newsapi.org/v2/everything?q=indian education&pageSize=${per_page}&page=${page_number}&apiKey=235cf2fee4224f6694f92501c48f98d1`
     try {
         let res = await fetch(url);
         let data = await res.json();
@@ -81,7 +81,7 @@ const showButon = (results, per_page) => {
 //> On Load this function will excute;
 let showdata = async () => {
     console.log("hello world");
-    const url = `https://newsapi.org/v2/everything?q=indian education&apiKey=0400744487794b96b2a7c9d61d7d135c`
+    const url = `https://newsapi.org/v2/everything?q=indian education&apiKey=235cf2fee4224f6694f92501c48f98d1`
     try {
         let res = await fetch(url);
         let get_data = await res.json();

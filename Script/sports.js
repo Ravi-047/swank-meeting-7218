@@ -1,5 +1,5 @@
 
-const api_key = "0400744487794b96b2a7c9d61d7d135c";
+const api_key = "540a02d33340407fa90f9010e62e59fe";
 
 
 import { getdata, appenddata, america } from "../components/worldComp.js"; // .--------------- importing  function
